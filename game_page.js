@@ -8,3 +8,17 @@ document.getElementById("player1_score").innerHTML=player1_score;
 document.getElementById("player2_score").innerHTML=player2_score;
 document.getElementById("player_question").innerHTML="question turn:"+player1_name;
 document.getElementById("player_answer").innerHTML="answer turn:"+player2_name;
+
+function send(){
+    number1= document.getElementById("number 1").value;
+    number2= document.getElementById("number 2").value;
+    question_number="<h4 id='number_display'>Q. "+number1+"X"+number2;+"</h4>";
+    input_box="<br> answer: <input id='input_check_box'>";
+    check_button="<br> <br> <button class='btn btn-info' onclick='check()'>check</button>";
+    row=question_number+input_box+check_button;
+    document.getElementById("output").innerHTML=row;
+    document.getElementById("number 1").value ="";
+        document.getElementById("number 2").value ="";
+    
+    
+}
